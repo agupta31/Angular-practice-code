@@ -1,0 +1,19 @@
+<h1>your country list</h1>
+
+<div class="container">
+    
+    <div ng-repeat="item in ctrList">
+        <div class="col-sm-6 col-md-4">
+             <div class="thumbnail">
+            <img src={{item.flagURL}}>
+                 <p>{{$index+1}}</p>
+                <div class="caption">
+                     <h1>{{item.name}}</h1>
+                    <h2>{{item.population}}</h2>
+                 </div>
+                 <a href="#/country/{{item.name}}"><button class="btn btn-primary">Show more</button></a>
+                </div>
+       </div>
+</div>
+    
+</div>
